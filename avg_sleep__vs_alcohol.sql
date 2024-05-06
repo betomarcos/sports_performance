@@ -17,7 +17,7 @@ WHERE p2.sleep_hours > 3) as temp
 GROUP BY 1;
 
 
-
+/*
 output:
 # alcohol_prior, occurrences, avg(current_sleep_score)
 '0', '57', '87.491228'
@@ -25,3 +25,4 @@ output:
 '2', '15', '83.400000'
 '3', '3', '80.666667'
 '4', '2', '86.000000'
+*/
