@@ -4,13 +4,12 @@ garmin and health data project
 ## OVERVIEW
 Generate health insights leveraging data from Garmin (health, workouts), and manual entry (health log).
 
-### Project Goals:
+## Project Goals:
 Create a reporting app with SQL and Tableau, to gather insights and monitor health metrics. App components:
-Data (CSVs + SQL): exports from Garmin, and manual input logs. Loaded to a local MySQL instance.
-Insights (SQL + Tableau): Understand relations and correlations on my daily habits, over time. Create a Tableau dashboard: 
-Potentially divided by:
-1) Workouts and performance: Vo2max, HRV, Running Pace over time, Threshold pace, etc
-2) Health: sleep scores, mood scores, productivity scores
+- Data (CSVs + SQL): exports from Garmin, and manual input logs. Loaded to a local MySQL instance.
+- Insights (SQL + Tableau): Understand relations and correlations on my daily habits, over time. Create a Tableau dashboard. Potentially divided by:
+- 1) Workouts and performance: Vo2max, HRV, Running Pace over time, Threshold pace, etc
+- 2) Health: sleep scores, mood scores, productivity scores
 Some examples to explore further:
 Which type of workout, or what intensity, or what duration correlates more with better Sleep score
 Which type of workout, or what intensity, or what duration correlates more with better Mood score
