@@ -27,9 +27,9 @@ Load to Tableau and create visualizations to measure the impact of several param
 
 
 ## Technical Goals:
-SQL data loading, cleanup, prep, and logic
-Descriptive and Inferential statistics
-Tableau data visualization and storytelling 
+- SQL data loading, cleanup, prep, and logic
+- Descriptive and Inferential statistics
+- Tableau data visualization and storytelling 
 
 ## DATA
 Garmin Health:
