@@ -1,48 +1,87 @@
-## OVERVIEW
-Generate health insights leveraging data from Garmin (health, workouts), and manual entry (health log).
+# Phase 1 - June 2024
 
-## Project Goals:
-Create a reporting app with SQL and Tableau, to gather insights and monitor health metrics. App components:
-- Data (CSVs + SQL): exports from Garmin, and manual input logs. Loaded to a local MySQL instance.
-- Insights (SQL + Tableau): Understand relations and correlations on my daily habits, over time. Create a Tableau dashboard. Potentially divided by:
-- 1) Workouts and performance: Vo2max, HRV, Running Pace over time, Threshold pace, etc
-- 2) Health: sleep scores, mood scores, productivity scores
+## STEP 1: Define goals
+Understand relationships between Sleep and Working out.
 
-Some examples to explore further:
-- Which type of workout, or what intensity, or what duration correlates more with better Sleep score
-- Which type of workout, or what intensity, or what duration correlates more with better Mood score
-- What is the impact of taking vs not taking allergy medicine, on my Sleep score, Mood score
+Key questions to answer:
 
-Load to Tableau and create visualizations to measure the impact of several parameters on my health. Examples:
-- Which days I worked out the most out of the week? (filter: year)
-- Top 3 Months with most activities vs least activities (filter: year)
-- Top 5 most recorded activities (filter: year)
-- Average duration per activity (filter: year) 
-- Compare HR per activity, on coldest months vs hottest months
-- How is my HR on average, in (Dec+Jan+Feb) vs (June+July+Aug), per activity.
-- Body Battery per Activity type
-- HRV per Activity type
-- Resting HR per Activity type
-- Sleep Score per Activity type
+**Volume vs. Heart Rate fitness:**
+- Does higher workout volume correlate with lower (lower is better) RHR?
+- Does higher workout volume correlate with higher (higher is better) HRV?
+
+**Intensity vs. Heart Rate fitness:**
+- How does workout intensity impact RHR?
+- How does workout intensity impact HRV?
+
+**Consistency and Stability:**
+- How does consistency in workout routines impact the stability of RHR and HRV over time?
+
+_Focus on workout types: running, cycling, strength training, and walking._
+
+## STEP 2: Define data and data sources
+
+4 Datasets: 
+- Garmin Connect CSV exports: Activities, Sleep, Heart Rate
+- Manual health log spreadsheet
+
+To answer the questions from STEP 1, the data fields required will be documented in further steps, after EDA and data cleanup.
+
+2 Datasets already loaded to MySQL:
+Garmin.prod_table. This dataset is a join of Garmin exports + manual input log on health habits I care about (alcohol consumption, mood, work stress, etc) 
+
+ -- _PLACEHOLDER FOR DATA MODEL_ --
+ 
+
+## Step 3: Exploratory Data Analysis (EDA)
+
+**Data cleanup and prep**
+- Ensure the table we are working with is a copy or stage table so there are no risks
+- Remove duplicates
+- Standardize the data
+- Deal with Nulls or blanks
+- Remove columns that are not needed
+
+**Descriptive Statistics:**
+1. Workout summary stats per week: 
+- total minutes (duration of workouts) with color by workout type
+- average HR during workouts, color by workout type 
+- aerobic training effect TE, with color by workout type 
+2. Sleep summary stats per week: - RHR and HRV 
+3. Create additional tables as needed for specific analysis, and after data cleanup and exploration 
+
+## Step 4: Data Analysis
+
+**1. Regression Analysis:**
+Perform linear regression to quantify the relationship between workout metrics (independent variables) and heart rate metrics (dependent variables).
+
+**2. Time Series Analysis:**
+Analyze trends and patterns in heart rate metrics over time in relation to changes in workout volume and intensity.
 
 
-## Technical Goals:
-- SQL data loading, cleanup, prep, and logic
-- Descriptive and Inferential statistics
-- Tableau data visualization and storytelling 
+## Step 5: Interpretation and Insights
+**Key Questions to Answer from STEP 1:**
 
-## DATA
-Garmin Health:
-- Export from Garmin
-- date, body battery, sleep hours, time of sleep, pulse ox, respiration, hrv, sleep score, resting hr, 
+**Volume vs. Heart Rate fitness:**
+- Does higher workout volume correlate with lower (lower is better) RHR?
+- Does higher workout volume correlate with higher (higher is better) HRV?
 
-Garmin Activities:
-- Export from Garmin
-- Date, activity, title, distance, calories, time, hr, pace...
+**Intensity vs. Heart Rate fitness:**
+- How does workout intensity impact RHR?
+- How does workout intensity impact HRV?
 
-Manual Log:
-- Manual spreadsheet with personal input
-- had coffee, had alcohol, had allergies, socialized, meditated, happy score, productive score, motivation score, etc
+**Consistency and Stability:**
+- How does consistency in workout routines impact the stability of RHR and HRV over time?
 
 
+## Step 6: Visualization and Presentation
 
+Using Tableau:
+1. Scatter Plots:
+- Plot workout volume vs. resting heart rate.
+- Plot workout intensity vs. HRV.
+
+2. Line Plots:
+- Plot RHR and HRV trends over time alongside workout volume and intensity metrics.
+
+3. Dashboards:
+- Create interactive dashboards to explore relationships between different metrics and to drill down into specific time periods or workout types.
