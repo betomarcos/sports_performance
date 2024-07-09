@@ -27,10 +27,7 @@ _Focus on workout types: running, cycling, strength training, and walking._
 To answer the questions from STEP 1, the data fields required will be documented in further steps, after EDA and data cleanup.
 
 2 Datasets already loaded to MySQL:
-Garmin.prod_table. This dataset is a join of Garmin exports + manual input log on health habits I care about (alcohol consumption, mood, work stress, etc) 
-
- -- _PLACEHOLDER FOR DATA MODEL_ --
- 
+Garmin.prod_table. This dataset is a join of Garmin exports + manual input log on health habits I care about (alcohol consumption, mood, work stress, etc)  
 
 ## Step 3: Exploratory Data Analysis (EDA)
 
@@ -50,8 +47,7 @@ Garmin.prod_table. This dataset is a join of Garmin exports + manual input log o
 3. Create additional tables as needed for specific analysis, and after data cleanup and exploration
 
 
-
-  Below are the queries in MySQL to do initial data exploration and cleanup. Also the CREATE statements to generate the dataset.
+  **Below are the queries in MySQL to do initial data exploration and cleanup. Also the CREATE statements to generate the dataset.**
   ```sql
   -- Create table "health_log" from a csv export from Google sheets. 
 -- Data is a manual daily log about health metrics I want to track. 
