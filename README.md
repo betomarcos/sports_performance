@@ -31,12 +31,24 @@ The following steps are detailed after the Results section.
 
 After running the following MySQL query to pull info on sleep metrics, training, allergies, and alcohol, I exported the data to Excel and ran correlations.
   ```sql
-select 
-	t.date, h.day_text, t.sleep_score, t.resting_hr, t.sleep_hours, t.activity_type, t.duration_minutes, t.max_hr, t.aerobic_te
-    , h.alcohol_ct, h.allergies_score 
-from garmin.sleep_vs_training t
-left join garmin.health_log_raw h on t.date = h.date
-order by date desc;
+SELECT 
+    t.date, 
+    MAX(h.day_text) AS day_text,  
+    ROUND(AVG(t.sleep_score)) AS avg_sleep_score,
+    ROUND(AVG(t.resting_hr)) AS avg_resting_hr,  
+    ROUND(AVG(t.sleep_hours), 2) AS avg_sleep_hours,  
+    GROUP_CONCAT(DISTINCT t.activity_type) AS activity_types,  
+    ROUND(SUM(t.duration_minutes)) AS total_duration_minutes,  
+    ROUND(MAX(t.max_hr)) AS max_hr,
+    SUM(t.aerobic_te) as total_te, 
+    ROUND(AVG(h.alcohol_ct)) AS avg_alcohol_ct,  
+    ROUND(AVG(h.allergies_score),2) AS avg_allergies_score  
+FROM garmin.sleep_vs_training t
+LEFT JOIN garmin.health_log_raw h ON t.date = h.date
+GROUP BY t.date
+HAVING avg_sleep_score > 0
+ORDER BY t.date DESC;
+
   ```
 
 
