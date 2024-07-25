@@ -38,6 +38,20 @@ left join garmin.health_log_raw h on t.date = h.date
 order by date desc;
   ```
 
+**Data definitions utilized in the CORRELATION ANALYSIS:**
+* _sleep_score:_ Sleep Score, 0-100 score measured by a mix of native metrics from Garmin such as Heart Rate, Heart Rate Variability (HRV), Resting Heart Rate (RHR), Stress, etc.
+* _resting_hr:_ Resting Heart Rate, beats per minutes measured when in rest (sleeping)
+* _sleep_hours:_ Sleep Hours, number of hours slept
+* _activity_type:_ Activity Type from Garmin workouts: Running, Cycling, Walking, Strength, Yoga
+* _duration_minutes:_ Activity duration in minutes
+* _max_hr:_ Maximum heart rate reached during an workout activity
+* _aerobit_te:_ Measures the aerobic benefit of a workout activity
+* _alcohol_ct:_ number of alcoholic beverages consumed in 1 day. 1 alcoholic beverage could be: 1 glass of wine, 1 beer, 1 ounce of liquor.
+* _allergies_score:_ score from 0-1 on environmental allergies with effects such as runny nose, blocked nostrils, sneezing, fatigue, etc. Example:
+    * 0: no allergy symptoms
+    * .5: noticeable but manageable symptoms that does not interfere with work or exercise activities too much
+    * 1: barely manageable symptoms, not able to work or exercise
+
 Sample dataset (actual dataset has 130+ entries:
 
 ![image](https://github.com/user-attachments/assets/c84bfa17-2bfe-4eb2-91d6-789ef1c5bfe5)
