@@ -1,13 +1,13 @@
 # Phase 1 - June 2024
 
 ## STEP 1: Define goals
-Understand relationships between Sleep and Working out.
+Understand relationships between Sleep, Working out, Alcohol consumption, and other health metrics.
 
-Key questions to answer:
+Some questions to answer:
 
 **Volume vs. Heart Rate fitness:**
 - Does higher workout volume correlate with lower (lower is better) RHR?
-- Does higher workout volume correlate with higher (higher is better) HRV?
+- Does higher workout volume correlate with higher (higher is better) Sleep Scores?
 
 **Intensity vs. Heart Rate fitness:**
 - How does workout intensity impact RHR?
