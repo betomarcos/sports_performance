@@ -52,8 +52,8 @@ order by date desc;
 * _alcohol_ct:_ number of alcoholic beverages consumed in 1 day. 1 alcoholic beverage could be: 1 glass of wine, 1 beer, 1 ounce of liquor.
 * _allergies_score:_ score from 0-1 on environmental allergies with effects such as runny nose, blocked nostrils, sneezing, fatigue, etc. Example:
     * 0: no allergy symptoms
-    * .5: noticeable but manageable symptoms that does not interfere with work or exercise activities too much
-    * 1: barely manageable symptoms, not able to work or exercise
+    * .5: noticeable but manageable symptoms that do not interfere with work or exercise activities too much
+    * 1: barely manageable symptoms, not able to fully functoin and focus at work or exercise
 
 
 Sample dataset (actual dataset has 130+ entries:
