@@ -1,12 +1,22 @@
 # Phase 1 - June 2024
 
 
-## OVERVIEW
+## 1. OVERVIEW
 The goal of this project is to understand relationships between Sleep, Working out, Alcohol consumption, and other health metrics.
-The data in scope comes from 2 main sources: 1) Garmin exports (sleep, workouts) and 2) manual log with diet habits updated in a google sheet
+The data in scope comes from 2 main sources: 1) Garmin exports (sleep, workouts) and 2) manual log with diet habits updated in a google sheet.
+The results and outputs should include correlations summary and recommendations.
+
+## 2. METHODOLOGY
+The following steps are detailed after the Results section.
+1) Determine metrics to research and formulate questions for guidance
+2) Define data and data sources
+3) Exploratory Data Analysis (EDA)
+4) Data Analysis
+5) Interpretation and Insights
+6) Visualization and Presentation
 
 
-## RESULTS (work in progress)
+## 3. RESULTS
 
 After running the following MySQL query to pull info on sleep metrics, training, allergies, and alcohol, I exported the data to Excel and ran correlations.
   ```sql
@@ -53,10 +63,11 @@ aerobic_te: -0.220
 
 
 
-## STEP 1: Define goals
+# METHODOLOGY 
+## STEP 1: Determine metrics to research and formulate questions for guidance
 Understand relationships between Sleep, Working out, Alcohol consumption, and other health metrics.
 
-Some questions to answer:
+Guiding questions:
 
 **Volume vs. Heart Rate fitness:**
 - Does higher workout volume correlate with lower (lower is better) RHR?
@@ -333,11 +344,15 @@ we only need to update the stage and prod tables running the etl scripts.
 
 ## Step 4: Data Analysis
 
-**1. Regression Analysis:**
+**Correlation Analysis:**
+Run Correlations to compare how different habits can impact Sleep Score.
+
+**Regression Analysis:**
 Perform linear regression to quantify the relationship between workout metrics (independent variables) and heart rate metrics (dependent variables).
 
-**2. Time Series Analysis:**
+**Time Series Analysis:**
 Analyze trends and patterns in heart rate metrics over time in relation to changes in workout volume and intensity.
+
 
 
 ## Step 5: Interpretation and Insights
