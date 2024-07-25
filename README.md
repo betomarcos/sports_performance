@@ -24,6 +24,7 @@ The following steps are detailed after the Results section.
 6) Visualization and Presentation
 
 
+
 ## 3. RESULTS
 
 **CORRELATION ANALYSIS**
@@ -38,7 +39,9 @@ left join garmin.health_log_raw h on t.date = h.date
 order by date desc;
   ```
 
+
 **Data definitions utilized in the CORRELATION ANALYSIS:**
+ 
 * _sleep_score:_ Sleep Score, 0-100 score measured by a mix of native metrics from Garmin such as Heart Rate, Heart Rate Variability (HRV), Resting Heart Rate (RHR), Stress, etc.
 * _resting_hr:_ Resting Heart Rate, beats per minutes measured when in rest (sleeping)
 * _sleep_hours:_ Sleep Hours, number of hours slept
@@ -52,22 +55,23 @@ order by date desc;
     * .5: noticeable but manageable symptoms that does not interfere with work or exercise activities too much
     * 1: barely manageable symptoms, not able to work or exercise
 
-Sample dataset (actual dataset has 130+ entries:
 
+Sample dataset (actual dataset has 130+ entries:
+ 
 ![image](https://github.com/user-attachments/assets/c84bfa17-2bfe-4eb2-91d6-789ef1c5bfe5)
 
 
-Summarize weekly habits:
-
+Summary of weekly habits:
 <img width="753" alt="image" src="https://github.com/user-attachments/assets/01fdecf7-03f5-426e-b575-ec307f0376d7">
 
+ 
 
 
 Afterwards, ran the Excel =CORREL() function and the results are as follows:
-
+  
 ![image](https://github.com/user-attachments/assets/24735faa-fb92-4c9b-9a12-38f9e59893b6)
 
-
+ 
 **Correlation Analysis: Results Summary**
 
 **Recommendation**: Based on the following results and the data available for the analysis, the recommendation would be to focus most of the attention to increasing the # of hours slept every day. This is the metric that has the most impact on Sleep Score.
