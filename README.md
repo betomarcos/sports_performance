@@ -3,10 +3,10 @@
 
 ## 1. OVERVIEW
 
-- The goal of this project is to understand relationships between Sleep, Working out, Alcohol consumption, and other health metrics.
-- The data in scope comes from 2 main sources: 1) Garmin exports (sleep, workouts) and 2) manual log with diet habits updated in a google sheet.
-    - Garmin activities in scope: running, cycling, strength training, and walking.
-    - 138 rows in the final dataset
+- Goal: understand relationships between Sleep, Working out, Alcohol consumption, and other health metrics.
+- The data in scope comes from 2 sources: **1)** Garmin exports (sleep, workouts) and **2)** manual log with diet habits updated in a google sheet.
+    - Garmin activities in scope: running, cycling, strength training, yoga, walking.
+    - 138 rows in the final dataset, where most of the times, 1 row = 1 day. Some days had 2 workouts  <--- Need to fix this to make it 1 row per day.
     - Date range: 2024-02-01 to 2024-05-01
 - The results and outputs should include correlations summary and recommendations.
 
