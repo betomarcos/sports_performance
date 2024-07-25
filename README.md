@@ -18,6 +18,7 @@ The following steps are detailed after the Results section.
 
 ## 3. RESULTS
 
+**CORRELATION ANALYSIS**
 After running the following MySQL query to pull info on sleep metrics, training, allergies, and alcohol, I exported the data to Excel and ran correlations.
   ```sql
 select 
@@ -38,7 +39,7 @@ Afterwards, ran the Excel =CORREL() function and the results are as follows:
 ![image](https://github.com/user-attachments/assets/24735faa-fb92-4c9b-9a12-38f9e59893b6)
 
 
-## Results summary:
+**Correlation Analysis: Results Summary**
 
 resting_hr: -0.342
 - Moderate Negative Correlation: As resting heart rate increases, the sleep score tends to decrease. This might indicate that higher resting heart rates are associated with lower sleep quality.
@@ -61,6 +62,8 @@ max_hr: -0.080
 aerobic_te: -0.220
 - Weak Negative Correlation: There is a slight negative correlation between aerobic training effect and sleep score, indicating that higher aerobic training effect might be associated with lower sleep scores, but the relationship is not strong.
 
+
+---------------------------------------------------------------
 
 
 # METHODOLOGY 
