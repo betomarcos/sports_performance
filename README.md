@@ -82,28 +82,17 @@ Afterwards, ran the Excel =CORREL() function and the results are as follows:
 
 **Recommendation**: Based on the following results and the data available for the analysis, the recommendation would be to focus most of the attention to increasing the # of hours slept every day. This is the metric that has the most impact on Sleep Score.
 
-**Correlation scores:**
+**Correlation scores: Sleep vs:**
 
-resting_hr: -0.342
-- Moderate Negative Correlation: As resting heart rate increases, the sleep score tends to decrease. This might indicate that higher resting heart rates are associated with lower sleep quality.
+* **resting_hr: -0.252:** Moderate Negative Correlation: Indicates that as resting heart rate increases, the sleep score tends to decrease. The relationship is moderate.
+* **sleep_hours: 0.710:** Strong Positive Correlation: This shows a strong positive relationship, suggesting that as sleep hours increase, the sleep score also tends to increase, indicating better sleep quality with more sleep hours.
+* **alcohol_ct: 0.009:** Very Weak Positive Correlation: There is almost no correlation between alcohol count and sleep score, indicating that alcohol consumption has minimal impact on sleep score in this dataset.
+* **allergies_score: 0.089:** Very Weak Positive Correlation: This suggests a very slight positive relationship between allergies score and sleep score, which is not likely to be significant.
+* **duration_minutes: 0.094:** Very Weak Positive Correlation: There is a very slight positive correlation, indicating that longer duration of activities has a minimal impact on increasing the sleep score.
+* **max_hr: -0.005:** Very Weak Negative Correlation: There is virtually no correlation between maximum heart rate and sleep score, suggesting little to no relationship.
+* **aerobic_te: -0.069:** Very Weak Negative Correlation: Indicates a very slight negative relationship between aerobic training effect and sleep score, which is not likely to be significant.
 
-sleep_hours: 0.848
-- Strong Positive Correlation: As sleep hours increase, the sleep score also tends to increase significantly, suggesting that more sleep is associated with better sleep quality.
 
-alcohol_ct: -0.112
-- Weak Negative Correlation: There is a slight tendency for sleep score to decrease as alcohol consumption increases, but the relationship is weak.
-
-allergies_score: 0.084
-- Very Weak Positive Correlation: There is almost no correlation between allergies score and sleep score, indicating that allergies may not significantly impact sleep quality in this dataset.
-
-duration_minutes: -0.314
-- Weak to Moderate Negative Correlation: As the duration of activities increases, the sleep score tends to decrease. This might indicate that longer durations of physical activity could be linked to lower sleep quality, though the relationship is not strong.
-
-max_hr: -0.080
-- Very Weak Negative Correlation: There's a minimal negative correlation between maximum heart rate and sleep score, suggesting little to no relationship between these variables.
-
-aerobic_te: -0.220
-- Weak Negative Correlation: There is a slight negative correlation between aerobic training effect and sleep score, indicating that higher aerobic training effect might be associated with lower sleep scores, but the relationship is not strong.
 
 
 ---------------------------------------------------------------  
