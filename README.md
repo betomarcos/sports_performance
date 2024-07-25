@@ -72,8 +72,9 @@ Summary of weekly habits:
 <img width="753" alt="image" src="https://github.com/user-attachments/assets/01fdecf7-03f5-426e-b575-ec307f0376d7">
 
 Afterwards, ran the Excel =CORREL() function and the results are as follows:  
-  
-![image](https://github.com/user-attachments/assets/24735faa-fb92-4c9b-9a12-38f9e59893b6)
+
+![image](https://github.com/user-attachments/assets/65a6b249-dc84-4b5e-8d25-a2bc39a57410)
+
 
  
 <br />
@@ -85,7 +86,7 @@ Afterwards, ran the Excel =CORREL() function and the results are as follows:
 **Correlation scores: Sleep vs:**
 
 * **resting_hr: -0.252:** Moderate Negative Correlation: Indicates that as resting heart rate increases, the sleep score tends to decrease. The relationship is moderate.
-* **sleep_hours: 0.710:** Strong Positive Correlation: This shows a strong positive relationship, suggesting that as sleep hours increase, the sleep score also tends to increase, indicating better sleep quality with more sleep hours.
+* **-> sleep_hours: 0.710:** Strong Positive Correlation: This shows a strong positive relationship, suggesting that as sleep hours increase, the sleep score also tends to increase, indicating better sleep quality with more sleep hours.
 * **alcohol_ct: 0.009:** Very Weak Positive Correlation: There is almost no correlation between alcohol count and sleep score, indicating that alcohol consumption has minimal impact on sleep score in this dataset.
 * **allergies_score: 0.089:** Very Weak Positive Correlation: This suggests a very slight positive relationship between allergies score and sleep score, which is not likely to be significant.
 * **duration_minutes: 0.094:** Very Weak Positive Correlation: There is a very slight positive correlation, indicating that longer duration of activities has a minimal impact on increasing the sleep score.
@@ -94,6 +95,8 @@ Afterwards, ran the Excel =CORREL() function and the results are as follows:
 
 
 
+
+---------------------------------------------------------------  
 
 ---------------------------------------------------------------  
 
@@ -372,8 +375,6 @@ we only need to update the stage and prod tables running the etl scripts.
 
 
   ```
-
-
   
 
 ## Step 4: Data Analysis
@@ -391,30 +392,7 @@ Analyze trends and patterns in heart rate metrics over time in relation to chang
 
 ## Step 5: Interpretation and Insights
 **Key Questions to Answer from STEP 1:**
-
-**Volume vs. Heart Rate fitness:**
-- Does higher workout volume correlate with lower (lower is better) RHR?
-- Does higher workout volume correlate with higher (higher is better) HRV?
-
-**Intensity vs. Heart Rate fitness:**
-- How does workout intensity impact RHR?
-- How does workout intensity impact HRV?
-
-**Consistency and Stability:**
-- How does consistency in workout routines impact the stability of RHR and HRV over time?
-
+Interpretations documented on the overview section, in RESULTS.
 
 ## Step 6: Visualization and Presentation
-
-Using Tableau:
-1. Scatter Plots:
-- Plot workout volume vs. resting heart rate.
-- Plot workout intensity vs. HRV.
-
-2. Line Plots:
-- Plot RHR and HRV trends over time alongside workout volume and intensity metrics.
-
-3. Dashboards:
-- Create interactive dashboards to explore relationships between different metrics and to drill down into specific time periods or workout types.
-
-
+TBD
