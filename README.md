@@ -63,7 +63,7 @@ ORDER BY t.date DESC;
     * 1: barely manageable symptoms, not able to fully functoin and focus at work or exercise
 
 <br />
-Sample dataset (actual dataset has 89 entries
+Sample dataset (actual dataset has 89 entries)
 
 ![image](https://github.com/user-attachments/assets/c84bfa17-2bfe-4eb2-91d6-789ef1c5bfe5)
 
