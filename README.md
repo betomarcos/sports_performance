@@ -1,13 +1,16 @@
-# Phase 1 - June 2024
+# GARMIN HEALTH AND ACTIVITIES ANALYSIS
 
 
 ## 1. OVERVIEW
 
 - The goal of this project is to understand relationships between Sleep, Working out, Alcohol consumption, and other health metrics.
 - The data in scope comes from 2 main sources: 1) Garmin exports (sleep, workouts) and 2) manual log with diet habits updated in a google sheet.
+    - Garmin activities in scope: running, cycling, strength training, and walking.
     - 138 rows in the final dataset
     - Date range: 2024-02-01 to 2024-05-01
 - The results and outputs should include correlations summary and recommendations.
+
+
 
 
 ## 2. METHODOLOGY
@@ -38,6 +41,12 @@ order by date desc;
 Sample dataset (actual dataset has 130+ entries:
 
 ![image](https://github.com/user-attachments/assets/c84bfa17-2bfe-4eb2-91d6-789ef1c5bfe5)
+
+
+Summarize weekly habits:
+
+<img width="753" alt="image" src="https://github.com/user-attachments/assets/01fdecf7-03f5-426e-b575-ec307f0376d7">
+
 
 
 Afterwards, ran the Excel =CORREL() function and the results are as follows:
