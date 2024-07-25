@@ -10,9 +10,6 @@
     - Date range: 2024-02-01 to 2024-05-01
 - The results and outputs should include correlations summary and recommendations.
 
-
-
-
 ## 2. METHODOLOGY
 
 The following steps are detailed after the Results section.
@@ -22,8 +19,6 @@ The following steps are detailed after the Results section.
 4) Data Analysis
 5) Interpretation and Insights
 6) Visualization and Presentation
-
-
 
 ## 3. RESULTS
 
@@ -67,23 +62,22 @@ ORDER BY t.date DESC;
     * .5: noticeable but manageable symptoms that do not interfere with work or exercise activities too much
     * 1: barely manageable symptoms, not able to fully functoin and focus at work or exercise
 
+<br />
+Sample dataset (actual dataset has 130+ entries
 
-Sample dataset (actual dataset has 130+ entries:
- 
 ![image](https://github.com/user-attachments/assets/c84bfa17-2bfe-4eb2-91d6-789ef1c5bfe5)
 
+Summary of weekly habits:  
 
-Summary of weekly habits:
 <img width="753" alt="image" src="https://github.com/user-attachments/assets/01fdecf7-03f5-426e-b575-ec307f0376d7">
 
- 
-
-
-Afterwards, ran the Excel =CORREL() function and the results are as follows:
+Afterwards, ran the Excel =CORREL() function and the results are as follows:  
   
 ![image](https://github.com/user-attachments/assets/24735faa-fb92-4c9b-9a12-38f9e59893b6)
 
  
+<br />
+
 **Correlation Analysis: Results Summary**
 
 **Recommendation**: Based on the following results and the data available for the analysis, the recommendation would be to focus most of the attention to increasing the # of hours slept every day. This is the metric that has the most impact on Sleep Score.
@@ -112,8 +106,7 @@ aerobic_te: -0.220
 - Weak Negative Correlation: There is a slight negative correlation between aerobic training effect and sleep score, indicating that higher aerobic training effect might be associated with lower sleep scores, but the relationship is not strong.
 
 
----------------------------------------------------------------
-
+---------------------------------------------------------------  
 
 # METHODOLOGY 
 ## STEP 1: Determine metrics to research and formulate questions for guidance
