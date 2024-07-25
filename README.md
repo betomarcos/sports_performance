@@ -328,30 +328,17 @@ left join garmin.health_log_raw h on t.date = h.date
 order by date desc;
   ```
 
-Sample dataset:
-date	day_text	sleep_score	resting_hr	sleep_hours	activity_type	duration_minutes	max_hr	aerobic_te	alcohol_ct	allergies_score
-5/1/24	Wednesday 	91	56	8.37	Walking	31	112	0.5	0	0.4
-4/30/24	Tuesday 	94	55	7.07	Running	28	194	3.3	0	0.4
-4/30/24	Tuesday 	94	55	7.07	Walking	27	118	0.3	0	0.4
-4/29/24	Monday 	89	59	9.48	Walking	32	112	0.6	0	0.4
-4/28/24	Sunday 	76	56	6.58	Walking	17	131	0.6	1	0.4
-4/27/24	Saturday 	88	57	8.77	Yoga	37	119	0.2	2	0.3
+Sample dataset (actual dataset has 130+ entries:
+
 ![image](https://github.com/user-attachments/assets/c84bfa17-2bfe-4eb2-91d6-789ef1c5bfe5)
 
 
 Afterwards, ran the Excel =CORREL() function and the results are as follows:
 
-v1	v2	CORREL
-sleep_score	resting_hr	-0.342280295
-sleep_score	sleep_hours	0.848139338
-sleep_score	alcohol_ct	-0.112036665
-sleep_score	allergies_score	0.084274119
-sleep_score	duration_minutes	-0.313759031
-sleep_score	max_hr	-0.07950493
-sleep_score	aerobic_te	-0.220201592![image](https://github.com/user-attachments/assets/24735faa-fb92-4c9b-9a12-38f9e59893b6)
+![image](https://github.com/user-attachments/assets/24735faa-fb92-4c9b-9a12-38f9e59893b6)
 
 
-Results summary:
+## Results summary:
 
 resting_hr: -0.342
 - Moderate Negative Correlation: As resting heart rate increases, the sleep score tends to decrease. This might indicate that higher resting heart rates are associated with lower sleep quality.
