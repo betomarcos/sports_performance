@@ -6,7 +6,7 @@
 - Goal: understand relationships between Sleep, Working out, Alcohol consumption, and other health metrics.
 - The data in scope comes from 2 sources: **1)** Garmin exports (sleep, workouts) and **2)** manual log with diet habits updated in a google sheet.
     - Garmin activities in scope: running, cycling, strength training, yoga, walking.
-    - 138 rows in the final dataset, where most of the times, 1 row = 1 day. Some days had 2 workouts  <--- Need to fix this to make it 1 row per day.
+    - 89 rows in the final dataset, where 1 row = 1 day. If 1 day had more than 1 workout, they get added in terms of workout time and aerobic benefit.
     - Date range: 2024-02-01 to 2024-05-01
 - The results and outputs should include correlations summary and recommendations.
 
@@ -63,7 +63,7 @@ ORDER BY t.date DESC;
     * 1: barely manageable symptoms, not able to fully functoin and focus at work or exercise
 
 <br />
-Sample dataset (actual dataset has 130+ entries
+Sample dataset (actual dataset has 89 entries
 
 ![image](https://github.com/user-attachments/assets/c84bfa17-2bfe-4eb2-91d6-789ef1c5bfe5)
 
