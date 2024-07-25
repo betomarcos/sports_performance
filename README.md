@@ -2,11 +2,16 @@
 
 
 ## 1. OVERVIEW
-The goal of this project is to understand relationships between Sleep, Working out, Alcohol consumption, and other health metrics.
-The data in scope comes from 2 main sources: 1) Garmin exports (sleep, workouts) and 2) manual log with diet habits updated in a google sheet.
-The results and outputs should include correlations summary and recommendations.
+
+- The goal of this project is to understand relationships between Sleep, Working out, Alcohol consumption, and other health metrics.
+- The data in scope comes from 2 main sources: 1) Garmin exports (sleep, workouts) and 2) manual log with diet habits updated in a google sheet.
+    - 138 rows in the final dataset
+    - Date range: 2024-02-01 to 2024-05-01
+- The results and outputs should include correlations summary and recommendations.
+
 
 ## 2. METHODOLOGY
+
 The following steps are detailed after the Results section.
 1) Determine metrics to research and formulate questions for guidance
 2) Define data and data sources
@@ -19,6 +24,7 @@ The following steps are detailed after the Results section.
 ## 3. RESULTS
 
 **CORRELATION ANALYSIS**
+
 After running the following MySQL query to pull info on sleep metrics, training, allergies, and alcohol, I exported the data to Excel and ran correlations.
   ```sql
 select 
@@ -40,6 +46,10 @@ Afterwards, ran the Excel =CORREL() function and the results are as follows:
 
 
 **Correlation Analysis: Results Summary**
+
+**Recommendation**: Based on the following results and the data available for the analysis, the recommendation would be to focus most of the attention to increasing the # of hours slept every day. This is the metric that has the most impact on Sleep Score.
+
+**Correlation scores:**
 
 resting_hr: -0.342
 - Moderate Negative Correlation: As resting heart rate increases, the sleep score tends to decrease. This might indicate that higher resting heart rates are associated with lower sleep quality.
