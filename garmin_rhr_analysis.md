@@ -11,11 +11,15 @@ Initial exploration by manually exporting 1 year of Resting Heart Rate (RHR) dat
 
 ### Result:  
 Basic statistics:  
+- Date range: 1/1/2025 to 9/9/2025
 - Count: 363 entries of RHR (1 per day) 
 - Range 18, Max 69, Min 51
 - Mean: 55.51
 - St Dev: 3.06
 - CV: 5.51
+
+<img width="399" alt="image" src="https://github.com/user-attachments/assets/b5852b39-56d1-40b9-8dcd-1f229ac1efba" />  
+
 
 Based on initial exploration of the RHR data:   
 - Most occurrences fall within the 52-58 bpm range, with a small variation of ±1 standard deviation.
