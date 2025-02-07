@@ -11,7 +11,7 @@ Initial exploration by manually exporting 1 year of Resting Heart Rate (RHR) dat
 
 ### Result:  
 Basic statistics:  
-- Date range: 1/1/2025 to 9/9/2025
+- Date range: 2024-02-06 to 2025-02-03
 - Count: 363 entries of RHR (1 per day) 
 - Range 18, Max 69, Min 51
 - Mean: 55.51
