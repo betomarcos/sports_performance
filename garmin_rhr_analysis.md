@@ -1,3 +1,5 @@
+# Garmin Resting Heart Rate Analysis on Sleep Performance
+
 ### Problem: 
 Sleep and energy levels have been inconsistent over the past two months. Issues like low energy upon waking, difficulty falling asleep, waking up in the middle of the night, and not feeling rested have been affecting my sleep quality. Fortunately, my Garmin watch tracks sleep metrics, and I’ve been wearing it every night for years.
 
