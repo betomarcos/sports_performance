@@ -1,15 +1,15 @@
 ### Problem: 
-Sleep and energy levels have been inconsistent over the past two months. Issues like low energy upon waking, difficulty falling asleep, waking up in the middle of the night, and not feeling rested have been affecting my sleep quality.   
-  
-Fortunately, my Garmin watch tracks sleep metrics, and I’ve been wearing it every night for years.
+Sleep and energy levels have been inconsistent over the past two months. Issues like low energy upon waking, difficulty falling asleep, waking up in the middle of the night, and not feeling rested have been affecting my sleep quality. Fortunately, my Garmin watch tracks sleep metrics, and I’ve been wearing it every night for years.
 
 ### Task:
-Explore Garmin sleep tracking data (such as Resting Heart Rate, Heart Rate Variability,  Sleep Score, Hours of sleep, etc) to find potential causes and insights related to sleep performance. 
+Explore Garmin sleep tracking data (Resting Heart Rate) to find potential causes and insights related to sleep performance. 
 
 ### Action:
 Initial exploration by manually exporting 1 year of Resting Heart Rate (RHR) data from my Garmin Connect. Analyzed it in a Jupyter notebook to establish baselines and calculate basic statistics.
 
 ### Result:  
+<img width="399" alt="image" src="https://github.com/user-attachments/assets/b5852b39-56d1-40b9-8dcd-1f229ac1efba" />  
+
 Basic statistics:  
 - Date range: 2024-02-06 to 2025-02-03
 - Count: 363 entries of RHR (1 per day) 
@@ -17,8 +17,6 @@ Basic statistics:
 - Mean: 55.51
 - St Dev: 3.06
 - CV: 5.51
-
-<img width="399" alt="image" src="https://github.com/user-attachments/assets/b5852b39-56d1-40b9-8dcd-1f229ac1efba" />  
 
 Based on initial exploration of the RHR data:   
 - Most occurrences fall within the 52-58 bpm range, with a small variation of ±1 standard deviation.
