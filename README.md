@@ -7,7 +7,7 @@ Key areas include:
 * Sleep: Sleep scores, Body battery, Resting heart rate, etc  
 <br/>
 
-Project: https://github.com/betomarcos/garmin_analysis/blob/main/garmin_rhr_analysis.md 
+Project: [GARMIN RESTING HEART RATE SLEEP ANALYSIS](https://github.com/betomarcos/garmin_analysis/blob/main/garmin_rhr_analysis.md) 
 * Tools: Python, Jupyter 
 <br/>
 
