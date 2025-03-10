@@ -33,6 +33,13 @@ Given the previous 2 months are where I started noticing more variance in my sle
 Based on the graph above:
 - The RHR is trending upwards. Higher RHR means less sleep quality.  
 
+
+**Recommendations:**
+- Try to improve circadian rhythm with consistent bed times and alarms.
+- Increase the humidity to reduce the dry sleeping environment.
+- Reduce caffeine quantity by half.
+
+
 **Next steps:**
 - Further analysis will bring in additional dimensions like sleep hours, sleep time, exercise, and allergy scores, day of the week, temperature
 - Investigate outliers by creating a new dataset for RHR values > 58 bpm, and analyze the influence of seasonality, holidays, and days of the week.
