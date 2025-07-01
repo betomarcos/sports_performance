@@ -11,9 +11,10 @@ Initial exploration by manually exporting 1 year of Resting Heart Rate (RHR) dat
 Analyzed it in a Jupyter notebook to establish baselines and calculate basic statistics.
 
 ### Results and Findings:  
+Detailed [Tableau Dashboard](https://public.tableau.com/app/profile/alberto.marcos/viz/SleepAnalysis-RestingHeartRate/Dashboard1)  
+
 <img width="399" alt="image" src="https://github.com/user-attachments/assets/b5852b39-56d1-40b9-8dcd-1f229ac1efba" />    
 
-More details in [Tableau]([url](https://public.tableau.com/app/profile/alberto.marcos/viz/SleepAnalysis-RestingHeartRate/Dashboard1))  
 
 
 
